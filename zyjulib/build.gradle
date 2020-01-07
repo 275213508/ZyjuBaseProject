@@ -20,16 +20,51 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "Boolean", "ISTEST", "false"
+        }
+        debug {
+            minifyEnabled false//true开启混淆配置，false关闭
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "Boolean", "ISTEST", "true"
         }
     }
-
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+//        sourceCompatibility = '1.8'
+//        targetCompatibility = '1.8'
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation 'com.alibaba:fastjson:1.2.58'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.alibaba:fastjson:1.2.58'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    // 沉浸式基础依赖包，必须要依赖
+    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+    //鲁班压缩
+    implementation 'top.zibin:Luban:1.1.8'
+    //侧滑删除
+    implementation 'com.dsiner.lib:slidelayout:1.0.3'
+    //富文本需要
+    implementation 'org.jsoup:jsoup:1.9.2'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation 'com.githang:android-crash:1.0'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation files('libs/EasyThread-0.6.0.jar')
+    implementation files('libs/mail.jar')
+
+    implementation 'com.github.xuexiangjys:XUpdate:1.0.9'
+    implementation 'com.github.Shashank02051997:FancyToast-Android:0.1.3'
 }

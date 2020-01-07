@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/solid_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title_editTextDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll0_editTextDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp">
+
+            <com.xiguawangzi.guatian.view.ClearEditText
+                android:id="@+id/et0_editTextDialog"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorHint="@color/gray"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll1_editTextDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp">
+
+            <com.xiguawangzi.guatian.view.ClearEditText
+                android:id="@+id/et1_editTextDialog"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:paddingLeft="5dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:paddingRight="5dp"
+                android:textColorHint="@color/gray"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt0_editTextDialog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_toum"
+            android:gravity="center"
+            android:text="@string/yes" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray" />
+
+        <Button
+            android:id="@+id/bt1_editTextDialog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_toum"
+            android:gravity="center"
+            android:text="@string/cancle" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
