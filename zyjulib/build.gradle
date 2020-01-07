@@ -64,7 +64,6 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:2.1.0'
     implementation files('libs/EasyThread-0.6.0.jar')
     implementation files('libs/mail.jar')
-
     implementation 'com.github.xuexiangjys:XUpdate:1.0.9'
     implementation 'com.github.Shashank02051997:FancyToast-Android:0.1.3'
 }
