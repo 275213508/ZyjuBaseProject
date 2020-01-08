@@ -4,19 +4,22 @@
 
 gradle 使用方法 
 
-  allprojects {
-		repositories {
+ 	<application
+      	  android:name="com.example.zyjulib.UCApplication"
+	  	...
+	/>
+  	allprojects {
+  		repositories {
 			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
 
 
- implementation 'com.github.275213508:ZyjuBaseProject:v1.0.1'
- 
+ 	implementation 'com.github.275213508:ZyjuBaseProject:v1.0.4'
  maven:
  
- <repositories>
+ 	 <repositories>
 		<repository>
 		    <id>jitpack.io</id>
 		    <url>https://jitpack.io</url>
