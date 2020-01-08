@@ -8,13 +8,13 @@
                 android:right="1dp"
                 android:top="1dp" />
             <solid android:color="@color/red" />
-            <corners android:radius="@dimen/dp_30" />
+            <corners android:radius="@dimen/px30" />
         </shape>
     </item>
     <item>
         <shape>
             <solid android:color="#FFFFFF" />
-            <corners android:radius="@dimen/dp_30" />
+            <corners android:radius="@dimen/px30" />
         </shape>
     </item>
 </layer-list>

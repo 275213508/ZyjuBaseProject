@@ -155,6 +155,7 @@
     <color name="AllTransparent">#00ffffff</color><!--全透明-->
     <color name="transparency">#80000000</color>
     <color name="tmd">#FF000000</color>
+    <color name="bg_toum">#00000000</color>
     <!--
     100% 	FF
     99% 	FC
