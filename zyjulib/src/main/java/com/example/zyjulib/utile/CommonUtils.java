@@ -1546,7 +1546,26 @@ public class CommonUtils {
         calendar.setTime(date);
         return calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
     }
-
+    /**
+     * 检查日期是否有效
+     * @param year 年
+     * @param month 月
+     * @param day 日
+     * @return boolean
+     */
+    public static boolean getDateIsTrue(String year, String month, String day){
+        try {
+            String data = year + month + day;
+            SimpleDateFormat simpledateformat = new SimpleDateFormat("yyyyMMdd");
+            simpledateformat.setLenient(false);
+            simpledateformat.parse(data);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            LogUtils.e("AppSysDateMgr-->>getDateIsTrue", e.getMessage().toString());
+            return false;
+        }
+        return true;
+    }
     /**
      * 根据时分秒的long行，转换为HH:mm类型
      */
