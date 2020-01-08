@@ -20,7 +20,6 @@
             android:paddingTop="@dimen/px18"
             android:paddingBottom="@dimen/px10"
             android:gravity="center"
-            android:textSize="@dimen/sp_18"
             android:textStyle="bold"
             android:textColor="@color/black"
             android:text="删除"
@@ -40,7 +39,6 @@
                 android:textColor="#383838"
                 android:minHeight="70dp"
                 android:paddingLeft="@dimen/px20"
-                android:textSize="@dimen/sp_16"
                 android:paddingRight="@dimen/px20"
                 android:background="@color/bg_toum"
                 android:gravity="center"/>
