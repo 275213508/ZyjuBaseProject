@@ -3,7 +3,10 @@
 
 
 gradle 使用方法 
-
+ <application
+       android:name="com.example.zyjulib.UCApplication"
+	...
+	/>
   allprojects {
 		repositories {
 			...
@@ -12,7 +15,7 @@ gradle 使用方法
 	}
 
 
- implementation 'com.github.275213508:ZyjuBaseProject:v1.0.1'
+ implementation 'com.github.275213508:ZyjuBaseProject:v1.0.4'
  
  maven:
  
