@@ -2,12 +2,16 @@
 曾跃举的工具项目测试
 
 
-gradle 使用方法 /n
+gradle 使用方法 
+
  <application
+ 
        android:name="com.example.zyjulib.UCApplication"
 	...
+	
 	/>
   allprojects {
+  
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
