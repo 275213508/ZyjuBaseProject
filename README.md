@@ -2,7 +2,7 @@
 曾跃举的工具项目测试
 
 
-gradle 使用方法 
+gradle 使用方法 /n
  <application
        android:name="com.example.zyjulib.UCApplication"
 	...
