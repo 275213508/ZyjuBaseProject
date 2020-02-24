@@ -3,6 +3,7 @@
 
 
 gradle 使用方法 
+继承 UCApplication
 
  	<application
       	  android:name="com.example.zyjulib.UCApplication"
