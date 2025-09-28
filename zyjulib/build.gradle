@@ -44,17 +44,16 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.squareup.retrofit2:retrofit:2.6.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
-    implementation 'com.alibaba:fastjson:1.2.58'
     implementation 'org.greenrobot:eventbus:3.1.1'
     implementation 'com.alibaba:fastjson:1.2.58'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     // 沉浸式基础依赖包，必须要依赖
-    implementation 'com.gyf.immersionbar:immersionbar:3.0.0'
+    implementation 'com.geyifeng.immersionbar:immersionbar:3.2.2'
     //鲁班压缩
     implementation 'top.zibin:Luban:1.1.8'
     //侧滑删除
-    implementation 'com.dsiner.lib:slidelayout:1.0.3'
+    implementation 'com.dsiner.lib:slidelayout:1.0.4'
     //富文本需要
     implementation 'org.jsoup:jsoup:1.9.2'
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'
